@@ -86,6 +86,7 @@
                 android:layout_height="match_parent"
                 android:checked="true"
                 android:text="Remember"
+                android:buttonTint="@color/red"
                 android:textColor="@color/gray"/>
 
             <Button
