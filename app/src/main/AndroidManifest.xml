@@ -9,15 +9,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Desafio3DH">
+
         <activity android:name=".RegisterActivity"
             android:theme="@style/Theme.Desafio3DH"
             android:label="Register"
             />
 
-
         <activity android:name=".LoginActivity"
             android:theme="@style/Theme.Design.NoActionBar" />
-
 
         <activity android:name=".SplashActivity"
             android:theme="@style/Theme.Design.NoActionBar">
@@ -28,11 +27,10 @@
             </intent-filter>
         </activity>
 
+        <activity android:name=".HomeActivity"
+            android:label="Marvel">
 
-
-
-
-        <activity android:name=".HomeActivity"></activity>
+        </activity>
     </application>
 
 </manifest>
