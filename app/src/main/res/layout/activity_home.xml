@@ -5,7 +5,7 @@ xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".ui.HomeActivity"
+    tools:context=".view.HomeActivity"
     android:background="@color/darkBlue">
 
 
@@ -31,11 +31,6 @@ xmlns:android="http://schemas.android.com/apk/res/android"
         app:layout_constraintTop_toBottomOf="@+id/toolbarMarvel"
         app:spanCount="3"
         tools:layout_editor_absoluteX="5dp"
-        tools:listitem="@layout/item_comic" />
-
-    <FrameLayout
-        android:id="@+id/fldetails"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        tools:listitem="@layout/rv_item_comic" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

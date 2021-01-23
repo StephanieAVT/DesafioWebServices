@@ -1,4 +1,4 @@
-package com.example.desafio3dh.ui
+package com.example.desafio3dh.view
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -13,15 +13,11 @@ class RegisterActivity : AppCompatActivity() {
 
        supportActionBar!!.setDisplayHomeAsUpEnabled(true)
 
-
-
         findViewById<Button>(R.id.btnSave).setOnClickListener {
             startActivity(Intent(this, HomeActivity::class.java))
         }
 
         }
-
-
 
         override fun onSupportNavigateUp(): Boolean {
             onBackPressed()

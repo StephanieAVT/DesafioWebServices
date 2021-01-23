@@ -1,4 +1,4 @@
-package com.example.desafio3dh.ui
+package com.example.desafio3dh.view
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -20,7 +20,5 @@ class LoginActivity : AppCompatActivity() {
             startActivity(Intent(this, HomeActivity::class.java))
 
         }
-        val ts = System.currentTimeMillis().toString()
-        Log.i("TAG", "ts:" + ts)
     }
 }

@@ -4,7 +4,6 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
 
-
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -12,16 +11,21 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Desafio3DH">
-
-        <activity android:name=".ui.RegisterActivity"
-            android:theme="@style/Theme.Desafio3DH"
-            android:label="Register"
+        <activity android:name=".view.ComicImageActivity"
+            android:theme="@style/Theme.Design.NoActionBar"
             />
-
-        <activity android:name=".ui.LoginActivity"
+        <activity android:name=".view.ComicDetActivity"
+            android:theme="@style/Theme.Design.NoActionBar"
+            />
+        <activity
+            android:name=".view.RegisterActivity"
+            android:label="Register"
+            android:theme="@style/Theme.Desafio3DH" />
+        <activity
+            android:name=".view.LoginActivity"
             android:theme="@style/Theme.Design.NoActionBar" />
-
-        <activity android:name=".ui.SplashActivity"
+        <activity
+            android:name=".view.SplashActivity"
             android:theme="@style/Theme.Design.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -29,11 +33,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <activity android:name=".ui.HomeActivity"
-            android:theme="@style/Theme.Design.NoActionBar">
-
-        </activity>
+        <activity
+            android:name=".view.HomeActivity"
+            android:theme="@style/Theme.Design.NoActionBar" />
     </application>
 
 </manifest>
