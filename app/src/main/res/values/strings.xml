@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">Desafio3DH</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="comicTitle">TITLE</string>
+    <string name="comicDescription">Description</string>
+    <string name="comicPublished">Published:</string>
+    <string name="dateComic">April 30, 2014</string>
+    <string name="comicPrice">Price:</string>
+    <string name="comicValuePrice">$5,99</string>
+    <string name="comicPages">Pages:</string>
+    <string name="comicNumberPages">38</string>
 </resources>

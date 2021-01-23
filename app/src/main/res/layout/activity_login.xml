@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LoginActivity"
+    tools:context=".ui.LoginActivity"
     android:background="@color/darkBlue">
 
 
@@ -37,50 +37,44 @@
             android:layout_height="match_parent"
             android:orientation="vertical"
             android:background="@drawable/white_backrground_radius"
-            android:paddingVertical="20dp"
             android:paddingHorizontal="10dp">
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/tilName"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="#00FFFFFF"
-                android:backgroundTint="#00FFFFFF"
-                android:textColorHint="@color/red">
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textColorHint="@color/redBar">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/edName"
+                    android:id="@+id/etName"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="#00FFFFFF"
-                    android:backgroundTint="@color/red"
+                    android:backgroundTint="@color/white"
                     android:hint="Name"
-                    android:inputType="textEmailAddress"
-                    android:paddingTop="35dp"
-                    android:paddingBottom="0dp"
-                    android:textColor="@color/black"/>
+                    android:inputType="textPersonName"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
             </com.google.android.material.textfield.TextInputLayout>
+
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/tilPassword"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="#00FFFFFF"
-                android:backgroundTint="#00FFFFFF"
-                android:textColorHint="@color/red">
-
+                android:layout_height="wrap_content"
+                android:layout_marginTop="19dp"
+                android:background="@color/white"
+                android:textColorHint="@color/redBar">
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/edPassword"
+                    android:id="@+id/etPassword"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:backgroundTint="@color/white"
                     android:hint="Password"
                     android:inputType="textPassword"
-                    android:background="#00FFFFFF"
-                    android:backgroundTint="@color/red"
-                    android:paddingTop="35dp"
-                    android:paddingBottom="0dp"
                     android:textColor="@color/black"/>
             </com.google.android.material.textfield.TextInputLayout>
+
 
             <CheckBox
                 android:layout_width="match_parent"
@@ -88,7 +82,7 @@
                 android:checked="true"
                 android:text="Remember"
                 android:layout_marginTop="10dp"
-                android:buttonTint="@color/red"
+                android:buttonTint="@color/redBar"
                 android:textColor="@color/gray"/>
 
             <Button
@@ -97,7 +91,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
                 android:text="Log in"
-                android:background="@color/red"
+                android:background="@color/redBar"
                 android:textSize="16sp" />
 
             <TextView

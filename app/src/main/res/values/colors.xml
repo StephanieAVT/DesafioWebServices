@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="red">#BB1C1F</color>
+    <color name="redStatus">#BB1C1F</color>
+    <color name="redBar">#ea2427</color>
     <color name="purple_500">#FF6200EE</color>
     <color name="purple_700">#FF3700B3</color>
     <color name="teal_200">#FF03DAC5</color>
@@ -9,4 +10,5 @@
     <color name="white">#FFFFFFFF</color>
     <color name="darkBlue">#00162C</color>
     <color name="gray">#47525E</color>
+
 </resources>

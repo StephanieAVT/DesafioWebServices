@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.desafio3dh">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -10,15 +13,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Desafio3DH">
 
-        <activity android:name=".RegisterActivity"
+        <activity android:name=".ui.RegisterActivity"
             android:theme="@style/Theme.Desafio3DH"
             android:label="Register"
             />
 
-        <activity android:name=".LoginActivity"
+        <activity android:name=".ui.LoginActivity"
             android:theme="@style/Theme.Design.NoActionBar" />
 
-        <activity android:name=".SplashActivity"
+        <activity android:name=".ui.SplashActivity"
             android:theme="@style/Theme.Design.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -27,8 +30,8 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".HomeActivity"
-            android:label="Marvel">
+        <activity android:name=".ui.HomeActivity"
+            android:theme="@style/Theme.Design.NoActionBar">
 
         </activity>
     </application>

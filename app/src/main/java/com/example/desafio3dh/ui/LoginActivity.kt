@@ -1,10 +1,12 @@
-package com.example.desafio3dh
+package com.example.desafio3dh.ui
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.widget.Button
 import android.widget.TextView
+import com.example.desafio3dh.R
 
 class LoginActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -18,5 +20,7 @@ class LoginActivity : AppCompatActivity() {
             startActivity(Intent(this, HomeActivity::class.java))
 
         }
+        val ts = System.currentTimeMillis().toString()
+        Log.i("TAG", "ts:" + ts)
     }
 }
