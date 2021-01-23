@@ -41,9 +41,9 @@ object APIService {
         logginInterceptor.level = HttpLoggingInterceptor.Level.BODY
 
         val interceptor = OkHttpClient.Builder()
-                .connectTimeout(5,TimeUnit.SECONDS)
-                .readTimeout(5,TimeUnit.SECONDS)
-                .writeTimeout(5,TimeUnit.SECONDS)
+                .connectTimeout(3,TimeUnit.SECONDS)
+                .readTimeout(3,TimeUnit.SECONDS)
+                .writeTimeout(3,TimeUnit.SECONDS)
                 .addInterceptor(logginInterceptor)
                 .addInterceptor { chain ->
                     val newRequest = chain.request().newBuilder().build()

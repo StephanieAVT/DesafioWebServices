@@ -29,7 +29,7 @@ class ComicAdapter(
 
     class ViewHolder( private val binding:RvItemComicBinding):RecyclerView.ViewHolder(binding.root){
 
-        @SuppressLint("SetTextI18n")
+        @SuppressLint("SetText")
         fun bind(comic: Result, comicOnClicked: (Result) -> Unit) = with(binding){
             Glide.with(itemView.context)
                 .load("${comic.thumbnail?.path?.replace("http","https")}.${comic.thumbnail?.extension}")
